@@ -45,7 +45,7 @@ with col2:
                             key="pronto_referencia")
 
     tipo = st.selectbox("Tipo do cliente",
-                    ["Pessoa Jurídida", "Pessoa Física"])
+                    ["Pessoa Física/Jurídica"])
 
 btn_cadastrar = st.button("Cadastrar", 
                           on_click=gravar_dados,
