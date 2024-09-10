@@ -21,7 +21,7 @@ st.divider()
 nome = st.text_input("Digite o nome do cliente",
                      key="nome_cliente")
 
-dt_nasc = st.date_input("Data nascimento", format="DD/MM/YYYY")
+dt_nasc = st.date_input("Data nascimento", min_value=date(1900, 1, 1), max_value=date.today(), format="DD/MM/YYYY")
 
 tipo = st.selectbox("Tipo do cliente",
                     ["Pessoa jurídida", "Pessoa física"])
